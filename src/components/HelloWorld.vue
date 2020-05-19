@@ -33,14 +33,21 @@
         </v-row>
       </v-col>
     </v-row>
+    <!-- 组件 -->
+    <demo :color="pink"></demo>
   </v-container>
 </template>
 
 <script>
+import demo from './demo'
  export default {
     data:() => ({
       alignment:'center',
-      justify: 'center'
-    })
+      justify: 'center',
+      pink: 'pink'
+    }),
+    components:{
+      demo
+    }
   }
 </script>
